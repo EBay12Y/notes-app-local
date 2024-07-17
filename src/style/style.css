@@ -1,0 +1,140 @@
+@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #fbf6e2;
+}
+
+header,
+footer {
+  width: 100%;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  width: 100%;
+  background-color: #fbf6e2;
+  max-width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-top: 100px;
+}
+
+section.input-section {
+  margin: auto;
+  /* padding: 20px 100px 20px 100px; */
+  padding-top: 25px;
+  width: 100%;
+}
+
+section.input-section h2 {
+  text-align: center;
+  font-size: 24px;
+  color: #131842;
+}
+
+div.form-group {
+  display: flex;
+  flex-direction: column;
+  margin-top: 12px;
+}
+
+div.form-group input,
+textarea {
+  border: 1px solid #135d66;
+  border-radius: 8px;
+  padding: 12px;
+}
+
+div.form-group > label {
+  margin-bottom: 8px;
+  color: #135d66;
+}
+
+button#saveBtn {
+  width: 100%;
+  margin-top: 20px;
+  padding: 14px 16px;
+  background-color: #131842;
+  border: 0;
+  border-radius: 8px;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+button#saveBtn:hover {
+  background-color: #131842;
+  transition: 0.3 ease-in;
+  color: #ecceae;
+}
+
+section.note {
+  align-self: stretch;
+  margin: 40px 0;
+}
+
+section.note .title-section > h2 {
+  font-size: 24px;
+  margin-bottom: 32px;
+  margin-top: 32px;
+  color: #003c43;
+  text-align: center;
+}
+
+.error-message {
+  color: red;
+  font-size: 14px;
+  margin-top: 4px;
+}
+
+footer {
+  background-color: #131842;
+}
+
+@media (min-width: 768px) {
+  section.input-section {
+    margin: auto;
+    padding: 20px 150px 20px 150px;
+  }
+
+  section.note .title-section > h2 {
+    font-size: 28px;
+  }
+}
+
+@media (min-width: 992px) {
+  section.input-section {
+    margin: auto;
+    padding: 25px 175px 25px 175px;
+  }
+
+  section.note .title-section > h2 {
+    font-size: 32px;
+  }
+}
+
+@media (min-width: 1200px) {
+  section.input-section {
+    margin: auto;
+    padding: 20px 250px 20px 250px;
+  }
+
+  section.note .title-section > h2 {
+    font-size: 32px;
+  }
+}
